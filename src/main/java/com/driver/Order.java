@@ -1,19 +1,18 @@
 package com.driver;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class Order {
 
-    private String id;
-    private int deliveryTime;
+    private String orderId;
 
-    public Order(String id, String deliveryTime) {
+    private String deliveryTime;
 
-        // The deliveryTime has to converted from string to int and then stored in the attribute
-        //deliveryTime  = HH*60 + MM
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public int getDeliveryTime() {return deliveryTime;}
 }
